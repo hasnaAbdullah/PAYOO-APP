@@ -5,5 +5,5 @@ const addMoneyFeature = document.getElementById("add-money-feature");
 addMoneyFeature.addEventListener("click", function (event) {
   latestPaymentSection.style.display = "none";
   addMoneySection.style.display = "block";
-  addMoneyFeature.style.border = "1.5px solid blue";
+  addMoneyFeature.style.border = "1.8px solid skyblue";
 });
