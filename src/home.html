@@ -80,6 +80,7 @@
           </div>
           <!-- cashout -->
           <div
+            id="cashout-feature"
             class="bg-gray-100 flex flex-col justify-center items-center p-5 rounded-lg border border-gray-300 space-y-2 cursor-pointer"
           >
             <img src="../assets/send.png" alt="" />
@@ -285,10 +286,66 @@
             </div>
           </div>
         </div>
+
+        <!-- cashout section -->
+        <div id="cashout-container" class="py-7 px-5 space-y-8 hidden">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">Cashout</h2>
+
+          <div class="hero block">
+            <div
+              class="hero-content min-w-md max-w-md flex-col lg:flex-row-reverse"
+            >
+              <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
+                <form class="card-body space-y-1">
+                  <fieldset class="fieldset space-y-1">
+                    <label class="fieldset-label text-black text-lg"
+                      >Account Number</label
+                    >
+                    <input
+                      type="text"
+                      id="cashout-number"
+                      class="input text-base w-full"
+                      placeholder="Enter 11 digit number"
+                      required
+                    />
+                    <label class="fieldset-label text-black text-lg"
+                      >Amount To Cashout</label
+                    >
+                    <input
+                      type="text"
+                      id="cashout-amount"
+                      class="input text-base w-full"
+                      placeholder="Enter amount to withdraw"
+                      required
+                    />
+                    <label class="fieldset-label text-black text-lg"
+                      >4 Digit PIN</label
+                    >
+                    <input
+                      type="text"
+                      id="cashout-pin"
+                      class="input text-base w-full"
+                      placeholder="Enter 4 Digit PIN"
+                      required
+                    />
+
+                    <button
+                      type="submit"
+                      id="cashout"
+                      class="btn border-none bg-blue-500 btn-neutral mt-4 text-lg"
+                    >
+                      Cashout
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
     <script src="../script/addMoney.js"></script>
+    <script src="../script/cashout.js"></script>
     <script src="../script/toggle.js"></script>
   </body>
 </html>
