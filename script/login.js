@@ -11,7 +11,7 @@ loginBtn.addEventListener("click", (event) => {
   if (accountNumber.length === 11) {
     console.log(accountNumber);
     if (pinNumber === "1234") {
-      window.location.href = "./home.html";
+      window.location.href = "./src/home.html";
     } else {
       alert("wrong pin number");
     }
