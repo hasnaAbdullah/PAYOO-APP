@@ -38,7 +38,9 @@
           <div class="flex justify-between items-center space-x-2">
             <img src="../assets/Group.png" alt="" />
             <div>
-              <h2 class="text-xl font-bold">$45000</h2>
+              <h2 class="text-xl font-bold">
+                $ <span id="main-balance">4500</span>
+              </h2>
               <p class="text-stone-600 text-sm">Available Balance</p>
             </div>
           </div>
@@ -210,7 +212,81 @@
             </div>
           </div>
         </div>
+
+        <!-- add money section -->
+        <div id="addMoney-container" class="py-7 px-5 space-y-8">
+          <h2 class="text-xl font-semibold text-gray-800 mb-1">Add Money</h2>
+
+          <div class="hero block">
+            <div
+              class="hero-content min-w-md max-w-md flex-col lg:flex-row-reverse"
+            >
+              <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
+                <form class="card-body space-y-1">
+                  <label
+                    for="bank-via"
+                    class="fieldset-label text-black text-lg"
+                    >Select A Bank</label
+                  >
+                  <select
+                    class="p-2 text-lg border-gray-300 rounded-sm"
+                    name=""
+                    id="bank-via"
+                  >
+                    <option disabled selected>Select bank</option>
+                    <option value="bkash">bkash</option>
+                    <option value="nagad">nagad</option>
+                    <option value="upai">upai</option>
+                    <option value="rocket">rocket</option>
+                  </select>
+                  <fieldset class="fieldset space-y-1">
+                    <label class="fieldset-label text-black text-lg"
+                      >Account Number</label
+                    >
+                    <input
+                      type="text"
+                      id="account-number"
+                      class="input text-base w-full"
+                      placeholder="Enter 11 digit number"
+                      required
+                    />
+                    <label class="fieldset-label text-black text-lg"
+                      >Amount To Add</label
+                    >
+                    <input
+                      type="text"
+                      id="amount"
+                      class="input text-base w-full"
+                      placeholder="Add amount to withdraw"
+                      required
+                    />
+                    <label class="fieldset-label text-black text-lg"
+                      >4 Digit PIN</label
+                    >
+                    <input
+                      type="text"
+                      id="pin-number"
+                      class="input text-base w-full"
+                      placeholder="Enter 4 Digit PIN"
+                      required
+                    />
+
+                    <button
+                      type="submit"
+                      id="add-money"
+                      class="btn border-none bg-blue-500 btn-neutral mt-4 text-lg"
+                    >
+                      Add Money
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <script src="../script/addMoney.js"></script>
   </body>
 </html>
